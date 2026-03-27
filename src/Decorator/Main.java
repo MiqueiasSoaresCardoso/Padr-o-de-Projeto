@@ -5,6 +5,8 @@ public class Main {
 
         // 1) Criando um carro básico e adicionando Ar-condicionado
         Veiculo carro = new Carro();
+        System.out.println(carro.calcularPreco());
+        carro.mostrarDetalhes();
         Veiculo carroComAr = new ArCondicionadoDecorator(carro);
         carroComAr.mostrarDetalhes();
         System.out.println("Preço: R$ " + carroComAr.calcularPreco());
