@@ -19,5 +19,6 @@ public class Main {
         raiz.adicionar(imagens);
 
         raiz.exibir("");
+        arq1.exibir("");
     }
 }
