@@ -3,6 +3,7 @@ package Flyweight;
 public class Main {
     public static void main(String[] args) {
 
+        /*"Criando" os Blocos*/
         Bloco pedra1 = BlocoFactory.getBloco("Pedra", "pedra.png", true);
         Bloco pedra2 = BlocoFactory.getBloco("Pedra", "pedra.png", true);
         Bloco grama = BlocoFactory.getBloco("Grama", "grama.png", true);
