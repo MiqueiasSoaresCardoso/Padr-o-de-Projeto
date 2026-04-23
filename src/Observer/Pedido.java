@@ -17,7 +17,7 @@ public class Pedido implements PedidoSubject {
     public void removerObservador(Observador obs) {
         observadores.remove(obs);
     }
-
+    //Percorre toda a lista de observadores e chama o método atualizar(status) em cada um.
     @Override
     public void notificarObservadores() {
         for (Observador obs : observadores) {
