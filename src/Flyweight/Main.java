@@ -9,6 +9,7 @@ public class Main {
         Bloco grama = BlocoFactory.getBloco("Grama", "grama.png", true);
 
         pedra1.exibir(10, 64, 20);
+        pedra1.exibir(12, 64, 20);
         pedra2.exibir(11, 64, 20);
         grama.exibir(12, 64, 20);
 
