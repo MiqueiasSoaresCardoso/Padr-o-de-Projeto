@@ -10,9 +10,9 @@ public class Documento {
     }
 
     public void apagarUltimosCaracteres(int quantidade) {
-        int inicio = Math.max(conteudo.length() - quantidade, 0);
+        int inicio = Math.max(conteudo.length() - quantidade, 0); //O Inicio nunca será menor que zero
         String removido = conteudo.substring(inicio);
-        conteudo.delete(inicio, conteudo.length());
+        conteudo.delete(inicio, conteudo.length()); //Aqui você de onde até aonde você deseja apagar
         System.out.println("Texto removido: " + removido);
     }
 

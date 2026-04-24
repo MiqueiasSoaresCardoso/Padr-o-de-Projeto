@@ -5,7 +5,9 @@ import java.util.Stack;
 
 public class Editor {
 
+    //STACK --> PILHA --> LIFO (O ÚLTIMO A ENTRAR, É O PRIMEIRO A SAIR (SER DESFEITO))
     private Stack<Command> historico = new Stack<>();
+    //LINKEDLIST --> LISTA ENCADEADA --> FIFO (O PRIMEIRO COMANDO QUE ENTROU SERÁ O PRIMEIRO A SER EXECUTADO)
     private Queue<Command> fila = new LinkedList<>();
 
     public void executarComando(Command command) {
@@ -29,7 +31,7 @@ public class Editor {
 
     public void processarFila() {
         while (!fila.isEmpty()) {
-            Command command = fila.poll();
+            Command command = fila.poll(); //Pega e remove o primeiro comando da fila
             command.execute();
             historico.push(command);
         }
